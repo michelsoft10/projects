@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-12T20:26:04.441167" rpa="false" schemaversion="5">
+<suite id="s1" name="Bdd" source="C:\Users\Michel\Desktop\Curso\bdd.robot">
+<test id="s1-t1" name="Cenário 1: Executar vídeo no site do youtube" line="37">
+<kw name="Dado que acesso o site do youtube">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-12T20:26:04.894164" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-12T20:26:04.893785" elapsed="4.466649"/>
+</kw>
+<status status="PASS" start="2025-06-12T20:26:04.892711" elapsed="4.467964"/>
+</kw>
+<kw name="Quando digito o nome da música">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T20:26:09.362810" level="INFO">Typing text 'Samuel Mariano Respira' into text field '//input[@name="search_query"]'.</msg>
+<arg>${input_pesquisa}</arg>
+<arg>${NomeDaMusica}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T20:26:09.361792" elapsed="0.323626"/>
+</kw>
+<status status="PASS" start="2025-06-12T20:26:09.361128" elapsed="0.324453"/>
+</kw>
+<kw name="E clico no botão buscar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-12T20:26:09.686538" level="INFO">Clicking element '//button[@class="ytSearchboxComponentSearchButton"]'.</msg>
+<arg>${button_pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T20:26:09.686284" elapsed="0.113904"/>
+</kw>
+<status status="PASS" start="2025-06-12T20:26:09.685963" elapsed="0.114447"/>
+</kw>
+<kw name="E clico na primeira opção da lista">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-12T20:26:09.801497" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<msg time="2025-06-12T20:26:09.914791" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-12T20:26:09.915007" level="FAIL">Element with locator '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]' not found.</msg>
+<arg>${primeiro}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-12T20:26:09.801243" elapsed="0.116784">Element with locator '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-06-12T20:26:09.800887" elapsed="0.117356">Element with locator '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]' not found.</status>
+</kw>
+<kw name="Entâo o vídeo é executado">
+<status status="NOT RUN" start="2025-06-12T20:26:09.918660" elapsed="0.000060"/>
+</kw>
+<status status="FAIL" start="2025-06-12T20:26:04.891682" elapsed="5.027338">Element with locator '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]' not found.</status>
+</test>
+<status status="FAIL" start="2025-06-12T20:26:04.442937" elapsed="5.477115"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Bdd" id="s1" pass="0" fail="1" skip="0">Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
